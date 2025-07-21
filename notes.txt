@@ -1,0 +1,29 @@
+dotnet aspnet-codegenerator controller -name CatalogoItemsController -async -api -m CatalogoItem -dc CatalogoContext -outDir Controllers
+dotnet aspnet-codegenerator controller -name LocalRetiradaController -async -api -m LocalRetirada -dc LocalRetirada -outDir Controllers
+dotnet aspnet-codegenerator controller -name ClienteController -async -api -m Cliente -dc Cliente -outDir Controllers
+dotnet aspnet-codegenerator controller -name ClienteController -async -api -m Cliente -dc Cliente -outDir Controllers
+dotnet aspnet-codegenerator controller -name ClienteController -async -api -m Cliente -dc ClienteContext -outDir Controllers
+
+
+ dotnet run --launch-profile https
+dotnet watch run --launch-profile https
+
+ dotnet ef migrations add AddCatalogoTable
+ dotnet ef database update
+
+
+
+ Documentation:
+ https://learn.microsoft.com/pt-br/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio-code
+
+ https://learn.microsoft.com/en-us/aspnet/core/web-api/handle-errors?view=aspnetcore-9.0
+
+ https://www.youtube.com/watch?v=6DWJIyipxzw
+
+ https://www-odata-org.translate.goog/getting-started/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc
+
+  https://learn.microsoft.com/pt-br/aspnet/core/data/ef-rp/intro?view=aspnetcore-9.0&tabs=visual-studio
+
+
+  API 
+  https://www.youtube.com/watch?v=8KFRDzG1BHs&list=PLhna1crYw0SNVBXZddt_oxtIoXUq4O0Hx&index=23
